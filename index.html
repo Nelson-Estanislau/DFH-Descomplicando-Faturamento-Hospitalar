@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DFH | Descomplicando Faturamento Hospitalar</h1>
+        <p>Transformando o Faturamento Hospitalar em uma Tarefa Simples e Eficiente</p>
+        <p class="intro"></p>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <ul>
+                <h2>Sejam bem-vindos</h2>
+                <li><button onclick="showModule('module0')">Introdução</button></li>
+                <h2>Módulos</h2>
+                <li><button onclick="showModule('module1')">Chegando ao Hospital</button></li>
+                <li><button onclick="showModule('module2')">Prontuário Gerado</button></li>
+                <li><button onclick="showModule('module3')">Principais Desafios e Soluções</button></li>
+                <li><button onclick="showModule('module4')">Ferramentas e Softwares</button></li>
+                <li><button onclick="showModule('module5')">Casos Práticos e Estudos de Caso</button></li>
+            </ul>
+        </div>
+        <main class="content">
+            <div id="module0" class="module-content">
+                <h2>Introdução</h2>
+                <p>O faturamento hospitalar é uma área complexa e desafiadora, mas com as estratégias certas, é possível
+                    simplificar todo esse processo. Neste blog, vamos explorar os principais desafios enfrentados pelos
+                    profissionais de faturamento hospitalar e compartilhar dicas práticas para superá-los. Nosso
+                    objetivo é fornecer informações valiosas e ferramentas úteis para tornar o seu trabalho mais
+                    eficiente e menos estressante. Junte-se a nós nessa jornada de aprendizado e aprimoramento contínuo!
+                </p>
+                <div style="margin-top:20px; padding:20px; background-color:#f4f4f4; border-radius:5px;">
+                    <h3>Inscreva-se na nossa Newsletter</h3>
+                    <p>Receba as últimas dicas e atualizações sobre faturamento hospitalar diretamente no seu e-mail.
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail" required
+                            style="padding:10px; width:70%; margin-right:10px;">
+                        <button type="submit"
+                            style="padding:10px 20px; background-color:#4CAF50; color:white; border:none; border-radius:5px;">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+            <div id="module1" class="module-content">
+                <div class="content">
+                    <h2>Chegando ao hospital</h2>
+                    <p>O paciente ao dar entrada no hospital, é fundamental que a recepção esteja altamente treinada,
+                        sendo capaz de captar todas as informações deste paciente. Informações como nome do paciente,
+                        idade, endereço, documentação como rg e cpf, carteira do plano de saúde se houver, pois estas
+                        informações são de extrema importância para gerar prontuário do paciente. Em seguida o paciente
+                        é encaminhado a triagem e logo após para o consultório médico, onde o médico já o aguarda para
+                        examina-lo e prescrever os medicamentos e procedimentos (exames), a serem realizados para esse
+                        determinado paciente. Por fim o paciente é encaminhado para a sala de medicações para receber o
+                        tratamento prescrito pelo médico.</p>
+                    <div class="image-section">
+                        <img src="img/entrando.jpeg" alt="Pessoa entrando em um hospital">
+                        <img src="img/recepcao.jpeg" alt="Paciente falando com uma secretária na recepção">
+                        <img src="img/atendimento.jpeg" alt="Paciente sendo atendido por um médico">
+                        <img src="img/medicando.jpeg" alt="Paciente recebendo medicações">
+                    </div>
+                </div>
+            </div>
+            <div id="module2" class="module-content">
+                <h2>Prontuário Gerado</h2>
+                <p>Uma vez que o prontuário do paciente em <b>Emergência</b> ou <b>Internamento</b> tenha sido gerado,
+                    esse prontuário deve ser protocolado e encaminhado ao setor de <b>Auditoria</b> e
+                    <b>Faturamento</b>.
+                    <br><br>
+                    É importante lembrar que nessa parte da criação dos protocolos, os prontuários sejam todos
+                    protocolados e separados por convênios e fisicamente sejam colocados na ordem por nomes dos
+                    pacientes, facilitando assim o seu recebimento pelo faturista.
+                </p>
+                <div class="image-section">
+                    <img src="img/separando_pruntuarios.jpeg" alt="Pessoa entrando em um hospital">
+                    <img src="img/separando_para_levar.jpg" alt="Pessoa entrando em um hospital">
+                    <img src="img/entregando_recebendo.jpeg" alt="Pessoa entrando em um hospital">
+                </div>
+            </div>
+            <div id="module3" class="module-content">
+                <h2>Módulo 3: Principais Desafios e Soluções</h2>
+                <p>Descubra os desafios comuns no faturamento hospitalar e como superá-los.</p>
+            </div>
+            <div id="module4" class="module-content">
+                <h2>Módulo 4: Ferramentas e Softwares</h2>
+                <p>Conheça as ferramentas e softwares que podem facilitar o seu trabalho.</p>
+            </div>
+            <div id="module5" class="module-content">
+                <h2>Módulo 5: Casos Práticos e Estudos de Caso</h2>
+                <p>Veja exemplos práticos e estudos de caso para aplicar o que aprendeu.</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>
+            © 2024 DFH | Descomplicando Faturamento Hospitalar <br>
+            <a href="privacy.html" target="_blank">Política de Privacidade</a> | <a href="terms.html" target="_blank">Termos e Condições</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
